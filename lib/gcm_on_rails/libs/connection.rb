@@ -32,7 +32,7 @@ module Gcm
         http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
         resp, dat = http.post(url.path, data, headers)
-
+        dat = resp.body if dat.blank?
         return {:code => resp.code.to_i, :message => dat }
       end
 

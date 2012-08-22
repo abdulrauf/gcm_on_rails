@@ -33,6 +33,8 @@ module Gcm
 
         resp, dat = http.post(url.path, data, headers)
         dat = resp.body if dat.blank?
+        puts "===========#{resp}"
+        puts "-----------#{dat}"
         return {:code => resp.code.to_i, :message => dat }
       end
 

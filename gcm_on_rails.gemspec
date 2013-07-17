@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "gcm_on_rails"
-  s.version = "0.1.2"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Dennis Ondeng"]
-  s.date = "2012-07-10"
+  s.authors = ["Dennis Ondeng", "Abdul Rauf"]
+  s.date = "2013-07-17"
   s.description = "gcm_on_rails is a Ruby on Rails gem that allows you to easily incorporate Google's\n                    'Google Cloud Messaging for Android' into your Rails application. This gem was derived from\n                    c2dm_on_rails (https://github.com/pimeys/c2dm_on_rails) after Google deprecated C2DM on June 27, 2012"
   s.email = "dondeng2@gmail.com"
   s.extra_rdoc_files = [
